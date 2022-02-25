@@ -61,13 +61,6 @@ else{
     }
   }
   
-   // Approvalkegiatan
-  elseif ($_GET['module']=='approvalkegiatan'){
-    if ($_SESSION['leveluser']=='atasan'){
-      include "modul/mod_approvalkegiatan/approvalkegiatan.php";
-    }
-  }
-  
    // Approval
   elseif ($_GET['module']=='approval'){
     
@@ -106,12 +99,6 @@ else{
   elseif ($_GET['module']=='laporanbulanan'){
    
       include "modul/mod_laporanbulanan/laporanbulanan.php";
-    
-  }
-  // Polling
-  elseif ($_GET['module']=='laporansekolah'){
-   
-      include "modul/mod_laporan/laporan.php";
     
   }
 

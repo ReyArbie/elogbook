@@ -58,6 +58,7 @@ session_start()
 								<input type="text" class="form-control" id="email" name="email" value="<?php echo $_SESSION['email'];?>"/>
 							</div>
 						</div>
+						<div class="form-group">
                         <label for="pembuat" class="col-sm-2 control-label" disabled></label>
                             <div class="col-sm-6">
                                 <label for="pembuat" class="col-sm-2 control-label">Jabatan</label>
