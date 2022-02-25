@@ -25,7 +25,7 @@ else{
               
 			  <div class="box">
 			  <section class="content-header">
-		<h1>MASTER Kegiatan</h1>
+		<h1>Manajemen Data Kegiatan</h1>
 		<ol class="breadcrumb">
             <li><a class="btn btn-warning btn-sm" href="<?php echo $base_url.$mod; ?>-tambah.html"><i class="fa fa-plus"></i>Tambah Kegiatan</a></li>
         </ol>
