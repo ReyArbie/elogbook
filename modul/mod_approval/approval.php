@@ -62,7 +62,7 @@ else{
 						session_start();
 						$query  = "SELECT b.nama_pegawai,a.uraian,b.waktu,b.waktu_selesai,b.id,b.foto,b.dokumen,b.status,c.atasan,d.nama_atasan
 						FROM kegiatan a, kinerja b,pegawai c, atasan d
-						WHERE b.uraian_kegiatan=a.id and d.nama_atasan=c.id and c.atasan='$_SESSION[atasan]' order by b.id";
+						WHERE b.uraian_kegiatan=a.id and d.nama_atasan=c.id and c.atasan='$_SESSION[namalengkap]' order by b.id";
 					}
 
 

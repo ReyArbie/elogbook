@@ -48,35 +48,35 @@ session_start()
                         <label for="pembuat" class="col-sm-2 control-label" disabled></label>
 							<div class="col-sm-6">
                                 <label for="pembuat" class="col-sm-2 control-label">Nama</label>
-								<input type="text" class="form-control" id="nama" name="nama" value="<?php echo $_SESSION['namalengkap'];?>"/>
+								<input type="text" class="form-control" id="nama" name="nama" value="<?php echo $_SESSION['namalengkap'];?>" disabled/>
 							</div>
 						</div>
                         <div class="form-group">
                         <label for="pembuat" class="col-sm-2 control-label" disabled></label>
 							<div class="col-sm-6">
                                 <label for="pembuat" class="col-sm-2 control-label">Email</label>
-								<input type="text" class="form-control" id="email" name="email" value="<?php echo $_SESSION['email'];?>"/>
+								<input type="text" class="form-control" id="email" name="email" value="<?php echo $_SESSION['email'];?>"disabled/>
 							</div>
 						</div>
 						<div class="form-group">
                         <label for="pembuat" class="col-sm-2 control-label" disabled></label>
                             <div class="col-sm-6">
                                 <label for="pembuat" class="col-sm-2 control-label">Jabatan</label>
-                                <input type="text" class="form-control" id="jabatan" name="jabatan" value="<?php echo $_SESSION['jabatan'];?>"/>
+                                <input type="text" class="form-control" id="jabatan" name="jabatan" value="<?php echo $_SESSION['jabatan'];?>" disabled/>
                             </div>
                         </div>
                         <div class="form-group">
                         <label for="pembuat" class="col-sm-2 control-label" disabled></label>
 							<div class="col-sm-6">
                                 <label for="pembuat" class="col-sm-2 control-label">No Telp</label>
-								<input type="text" class="form-control" id="telp" name="telp" value="<?php echo $_SESSION['telp'];?>"/>
+								<input type="text" class="form-control" id="telp" name="telp" value="<?php echo $_SESSION['telp'];?>" disabled/>
 							</div>
 						</div>
                         <div class="form-group">
                         <label for="pembuat" class="col-sm-2 control-label" disabled></label>
 							<div class="col-sm-6">
                                 <label for="pembuat" class="col-sm-2 control-label">Atasan</label>
-								<input type="text" class="form-control" id="atasan" name="atasan" value="<?php echo $_SESSION['atasan'];?>"/>
+								<input type="text" class="form-control" id="atasan" name="atasan" value="<?php echo $_SESSION['atasan'];?>" disabled/>
 							</div>
 						</div>
                         <div class="form-group">
