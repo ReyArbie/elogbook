@@ -46,7 +46,7 @@ else{
                     </thead>
                     <tbody>
 					<?php
-					$query  = "SELECT id,username,nama_lengkap,email,no_telp,level,foto
+					$query  = "SELECT id,username,nama_lengkap,email,no_telp,tingkat,foto
 					FROM users";
 					$tampil = mysqli_query($konek, $query);
 					$no=1;
@@ -56,7 +56,7 @@ else{
 							<td>$r[nama_lengkap] </td>
 							<td>$r[no_telp] </td>
 							<td>$r[email] </td>
-							<td>$r[level] </td>
+							<td>$r[tingkat] </td>
 							<td><img src='dist/img/".$r['foto']."' width='50'></td>
                 			
                   		
@@ -133,7 +133,7 @@ else{
 						<div class="form-group">
 							<label for="album" class="col-sm-3 control-label">Level</label>
 							<div class="col-sm-6">
-								<select class="form-control select2" id="level" name="level">
+								<select class="form-control select2" id="tingkat" name="tingkat">
 								<option value="0" selected>- Pilih Level -</option>
 									<?php
 									$query  = "SELECT * FROM tingkat ORDER BY id";
@@ -228,7 +228,7 @@ case "edit":
 						<div class="form-group">
 							<label for="album" class="col-sm-2 control-label">Level</label>
 							<div class="col-sm-6">
-							<select class="form-control select2" id="level" name="level">
+							<select class="form-control select2" id="tingkat" name="tingkat">
 									<?php
 									$query  = "SELECT * FROM tingkat ORDER BY id";
 									$tampil = mysqli_query($konek, $query);

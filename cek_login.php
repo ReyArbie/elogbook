@@ -29,7 +29,7 @@ if (!ctype_alnum($injeksi_username) OR !ctype_alnum($injeksi_password)){
 else {
 	$querylogin = 	"SELECT * FROM users WHERE username='$username' AND password='$password' AND blokir='N'";
 
-	$sql_query 	= 	"SELECT  u.id, u.username, u.password, u.level as level_user,P.jabatan as kode_jabatan,p.nip ,p.nama,  j.nama_jabatan , u.foto,
+	$sql_query 	= 	"SELECT  u.id, u.username, u.password, u.tingkat as level_user,P.jabatan as kode_jabatan,p.nip ,p.nama,  j.nama_jabatan , u.foto,
 					l.nama_level as jenis_jabatan, s.nama_seksi, i.nama_instalasi, a.nip as nip_atasan, a.nama_atasan, u.email , u.no_telp , u.blokir
 					from users u 
 					LEFT JOIN pegawai p ON p.nip = u.username 

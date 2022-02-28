@@ -27,7 +27,7 @@ else{
   $nama_lengkap		= $_POST['nama_lengkap'];
 	$no_telp		= $_POST['no_telp'];
 	$email			= $_POST['email'];
-  $level			= $_POST['level'];
+  $tingkat			= $_POST['tingkat'];
   $id_session = session_id();
   
   //cek gambar
@@ -37,7 +37,7 @@ else{
       $pasfoto        			= uploadprofil();
   }
   
-    $input = "INSERT INTO users (username, password, email, no_telp, nama_lengkap, id_session, level, foto) VALUES('$username','$password','$email','$no_telp','$nama_lengkap','$id_session', '$level', '$pasfoto')";
+    $input = "INSERT INTO users (username, password, email, no_telp, nama_lengkap, id_session, tingkat, foto) VALUES('$username','$password','$email','$no_telp','$nama_lengkap','$id_session', '$tingkat', '$pasfoto')";
     mysqli_query($konek, $input);
     
      header("location:".$base_url.$module);
@@ -50,7 +50,7 @@ else{
   $nama_lengkap		= $_POST['nama_lengkap'];
 	$no_telp		= $_POST['no_telp'];
 	$email			= $_POST['email'];
-  $level			= $_POST['level'];
+  $tingkat			= $_POST['tingkat'];
   $pasfoto_lama = $_POST['pasfotolama'];
 
   //cek gambar baru
@@ -61,10 +61,10 @@ else{
   }
 	
 	if($password==""){
-		 $update = "UPDATE users SET  email='$email', no_telp='$no_telp',nama_lengkap='$nama_lengkap', level='$level', foto='$pasfoto' WHERE id='$id'";
+		 $update = "UPDATE users SET  email='$email', no_telp='$no_telp',nama_lengkap='$nama_lengkap', tingkat='$tingkat', foto='$pasfoto' WHERE id='$id'";
 	}
 	else{
-		 $update = "UPDATE users SET  password='$password', email='$email', no_telp='$no_telp',nama_lengkap='$nama_lengkap', level='$level', foto='$pasfoto' WHERE id='$id'";
+		 $update = "UPDATE users SET  password='$password', email='$email', no_telp='$no_telp',nama_lengkap='$nama_lengkap', tingkat='$tingkat', foto='$pasfoto' WHERE id='$id'";
 	}
 
    

@@ -77,8 +77,8 @@ else{
 								<i class="fa fa-angle-left pull-right"></i>
 							</a>
 							<ul class="treeview-menu">					
-								<li class="<?php if($module=="laporanharian") echo "active"; ?>"><a href="<?php echo $base_url;?>laporanharian" title="Laporan Kinerja Harian"><i class="fa fa-circle-o"></i> <span>Laporan Kinerja Harian</span></a></li>
-								<li class="<?php if($module=="laporanbulanan") echo "active"; ?>"><a href="<?php echo $base_url;?>laporanbulanan" title="Laporan Kinerja Bulanan"><i class="fa fa-circle-o"></i> <span>Laporan Kinerja Bulanan</span></a></li>
+								<!-- <li class="<?php if($module=="laporanharian") echo "active"; ?>"><a href="<?php echo $base_url;?>laporanharian" title="Laporan Kinerja Harian"><i class="fa fa-circle-o"></i> <span>Laporan Kinerja Harian</span></a></li>
+								<li class="<?php if($module=="laporanbulanan") echo "active"; ?>"><a href="<?php echo $base_url;?>laporanbulanan" title="Laporan Kinerja Bulanan"><i class="fa fa-circle-o"></i> <span>Laporan Kinerja Bulanan</span></a></li> -->
 								<li class="<?php if($module=="approval") echo "active"; ?>"><a href="<?php echo $base_url;?>approval"><i class="fa fa-circle-o"></i> <span>Approval</span></a></li>					
 							</ul>
 						</li>

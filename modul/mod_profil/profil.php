@@ -40,7 +40,7 @@ session_start()
 					<div class="form-group"><center>
                     <label for="pembuat" class="col-sm-2 control-label" disabled></label>
 							<div class="col-sm-6">
-							<img src="dist/img/<?=$_SESSION['foto'];?>" width="200"/>
+							<img src="dist/img/<?=$_SESSION['foto'];?>" width="150"/>
 							</div>
 						</div>
 
@@ -83,9 +83,7 @@ session_start()
                         <label for="pembuat" class="col-sm-2 control-label" disabled></label>
                         </div>
 					</div><!-- /.box-body -->
-					<div class="box-footer">
-						<button type="submit" class="btn btn-primary">Update</button> <button type="button" onclick="self.history.back()" class="btn">Batal</button>
-					</div><!-- /.box-footer -->
+					
 				</form>
               </div><!-- /.box -->
                 
